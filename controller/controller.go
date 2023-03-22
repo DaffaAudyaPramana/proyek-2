@@ -1,12 +1,15 @@
 package controller
 
 import (
+	"github.com/DaffaAudyaPramana/dapbackend"
 	"github.com/DaffaAudyaPramana/proyek-2/config"
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
 )
+
+var DataUser = "Daffa Audya Pramana"
 
 type HTTPRequest struct {
 	Header string `json:"header"`
@@ -40,11 +43,6 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 	}
 
 }
-
-// func Homepage(c *fiber.Ctx) error {
-// 	getip := musik.GetIPaddress()
-// 	return c.JSON(getip)
-// }
 
 func Homepage(c *fiber.Ctx) error {
 	ipaddr := musik.GetIPaddress()
