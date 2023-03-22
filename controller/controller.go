@@ -3,7 +3,6 @@ package controller
 import (
 	"github.com/DaffaAudyaPramana/proyek-2/config"
 	"github.com/aiteung/musik"
-
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
@@ -42,7 +41,37 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 
 }
 
-func GetHome(c *fiber.Ctx) error {
-	getip := musik.GetIPaddress()
-	return c.JSON(getip)
+// func Homepage(c *fiber.Ctx) error {
+// 	getip := musik.GetIPaddress()
+// 	return c.JSON(getip)
+// }
+
+func Homepage(c *fiber.Ctx) error {
+	ipaddr := musik.GetIPaddress()
+	return c.JSON(ipaddr)
 }
+func GetUser(c *fiber.Ctx) error {
+	getstatus := backend.GetDataUser("Daffa Audya Pramana")
+	return c.JSON(getstatus)
+}
+
+// func Getpembayaran(c *fiber.Ctx) error {
+// 	getstatus := backend.GetDataPembayaran("Apakah kurikulum ini menyulitkan hidup?")
+// 	return c.JSON(getstatus)
+// }
+// func Getpendaftaran(c *fiber.Ctx) error {
+// 	getstatus := backend.GetDataPendaftaran("0822126722")
+// 	return c.JSON(getstatus)
+// }
+// func Getpengumuman(c *fiber.Ctx) error {
+// 	getstatus := backend.GetDataPengumuman("Denmark")
+// 	return c.JSON(getstatus)
+// }
+// func Getprogramkursus(c *fiber.Ctx) error {
+// 	getstatus := backend.GetDataProgramKursus("johndoe@flex.co")
+// 	return c.JSON(getstatus)
+// }
+
+// func GetHome(c *fiber.Ctx) error {
+// 	getip := backend
+// 	return c.JSON(getip)
