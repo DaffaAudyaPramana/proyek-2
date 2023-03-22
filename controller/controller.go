@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"github.com/DaffaAudyaPramana/backend"
 	"github.com/DaffaAudyaPramana/proyek-2/config"
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
@@ -51,8 +50,9 @@ func Homepage(c *fiber.Ctx) error {
 	ipaddr := musik.GetIPaddress()
 	return c.JSON(ipaddr)
 }
+
 func GetUser(c *fiber.Ctx) error {
-	getstatus := backend.GetDataUser("Daffa Audya Pramana")
+	getstatus := dapbackend.GetDataUser("Daffa Audya Pramana")
 	return c.JSON(getstatus)
 }
 
