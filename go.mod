@@ -3,7 +3,7 @@ module github.com/DaffaAudyaPramana/proyek-2
 go 1.20
 
 require (
-	github.com/DaffaAudyaPramana/dapbackend v0.1.2
+	github.com/DaffaAudyaPramana/dapbackend v0.1.3
 	github.com/aiteung/atdb v0.0.7
 	github.com/aiteung/musik v0.0.5
 	github.com/gofiber/fiber/v2 v2.42.0
@@ -14,6 +14,7 @@ require (
 require (
 	aidanwoods.dev/go-paseto v1.3.0 // indirect
 	filippo.io/edwards25519 v1.0.0 // indirect
+	github.com/DaffaAudyaPramana/pkbackend v0.0.0-20230323113744-34839e85a6d3 // indirect
 	github.com/aiteung/atapi v0.0.10 // indirect
 	github.com/aiteung/atmessage v0.0.12 // indirect
 	github.com/aiteung/atmodel v0.0.2 // indirect
