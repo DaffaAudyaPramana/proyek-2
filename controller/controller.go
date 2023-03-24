@@ -3,13 +3,12 @@ package controller
 import (
 	"github.com/DaffaAudyaPramana/pkbackend"
 	"github.com/DaffaAudyaPramana/proyek-2/config"
-	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/whatsauth/whatsauth"
 )
 
-var DataUser = "Daffa Audya Pramana"
+// var DataUser = "Daffa Audya Pramana"
 
 type HTTPRequest struct {
 	Header string `json:"header"`
@@ -44,12 +43,7 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 
 }
 
-func Homepage(c *fiber.Ctx) error {
-	ipaddr := musik.GetIPaddress()
-	return c.JSON(ipaddr)
-}
-
-func GetDataUser(c *fiber.Ctx) error {
+func Getdbuser(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataUser("Daffa Audya Pramana")
 	return c.JSON(getstatus)
 }
