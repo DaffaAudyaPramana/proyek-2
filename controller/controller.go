@@ -49,7 +49,7 @@ func Homepage(c *fiber.Ctx) error {
 	return c.JSON(ipaddr)
 }
 
-func GetUser(c *fiber.Ctx) error {
+func GetDataUser(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataUser("Daffa Audya Pramana")
 	return c.JSON(getstatus)
 }
