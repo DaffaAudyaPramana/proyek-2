@@ -54,23 +54,21 @@ func Getuser(c *fiber.Ctx) error {
 	return c.JSON(getstatus)
 }
 
-// func Getpembayaran(c *fiber.Ctx) error {
-// 	getstatus := backend.GetDataPembayaran("Apakah kurikulum ini menyulitkan hidup?")
-// 	return c.JSON(getstatus)
-// }
-// func Getpendaftaran(c *fiber.Ctx) error {
-// 	getstatus := backend.GetDataPendaftaran("0822126722")
-// 	return c.JSON(getstatus)
-// }
-// func Getpengumuman(c *fiber.Ctx) error {
-// 	getstatus := backend.GetDataPengumuman("Denmark")
-// 	return c.JSON(getstatus)
-// }
-// func Getprogramkursus(c *fiber.Ctx) error {
-// 	getstatus := backend.GetDataProgramKursus("johndoe@flex.co")
-// 	return c.JSON(getstatus)
-// }
+func Getpendaftaran(c *fiber.Ctx) error {
+	getstatus := pkbackend.GetDataPendaftaran("92348927348")
+	return c.JSON(getstatus)
+}
 
-// func GetHome(c *fiber.Ctx) error {
-// 	getip := backend
-// 	return c.JSON(getip)
+func Getpembayaran(c *fiber.Ctx) error {
+	getstatus := pkbackend.GetDataPembayaran("Dibayar?")
+	return c.JSON(getstatus)
+}
+
+func Getpengumuman(c *fiber.Ctx) error {
+	getstatus := pkbackend.GetDataPengumuman("Fighting")
+	return c.JSON(getstatus)
+}
+func Getkursus(c *fiber.Ctx) error {
+	getstatus := pkbackend.GetDataKursus("Jon Snow")
+	return c.JSON(getstatus)
+}

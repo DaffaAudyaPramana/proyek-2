@@ -3,7 +3,7 @@ module github.com/DaffaAudyaPramana/proyek-2
 go 1.20
 
 require (
-	github.com/DaffaAudyaPramana/pkbackend v0.0.2
+	github.com/DaffaAudyaPramana/pkbackend v0.0.4
 	github.com/aiteung/atdb v0.0.7
 	github.com/aiteung/musik v0.0.5
 	github.com/gofiber/fiber/v2 v2.42.0
