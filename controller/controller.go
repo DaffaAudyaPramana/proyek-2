@@ -54,13 +54,13 @@ func Homepage(c *fiber.Ctx) error {
 }
 
 func Getuser(c *fiber.Ctx) error {
-	getnama := pkbackend.GetDataUser("Arya")
-	return c.JSON(getnama)
+	getstatus := pkbackend.GetDataUser("Arya")
+	return c.JSON(getstatus)
 }
 
 func Getpendaftaran(c *fiber.Ctx) error {
-	getnama_siswa := pkbackend.GetDataPendaftaran("Arya")
-	return c.JSON(getnama_siswa)
+	getstatus := pkbackend.GetDataPendaftaran("Arya")
+	return c.JSON(getstatus)
 }
 
 func Getpembayaran(c *fiber.Ctx) error {
@@ -69,10 +69,10 @@ func Getpembayaran(c *fiber.Ctx) error {
 }
 
 func Getpengumuman(c *fiber.Ctx) error {
-	getprogram := pkbackend.GetDataPengumuman("Fighting")
-	return c.JSON(getprogram)
+	getstatus := pkbackend.GetDataPengumuman("Fighting")
+	return c.JSON(getstatus)
 }
 func Getkursus(c *fiber.Ctx) error {
-	getpengajar := pkbackend.GetDataKursus("Jon Snow")
-	return c.JSON(getpengajar)
+	getstatus := pkbackend.GetDataKursus("Jon Snow")
+	return c.JSON(getstatus)
 }
