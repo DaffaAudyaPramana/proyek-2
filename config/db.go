@@ -17,11 +17,12 @@ var DBUlbimariainfo = atdb.DBInfo{
 	DBString: MariaStringAkademik,
 	DBName:   "ujxmysni727vfcom",
 }
-
 var DBMongoinfo = atdb.DBInfo{
 	DBString: MongoString,
 	DBName:   "proyek-2",
 }
+
+var MongoConn = atdb.MongoConnect(DBMongoinfo)
 
 var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
 
