@@ -9,7 +9,11 @@ import (
 	"github.com/whatsauth/whatsauth"
 )
 
-var DataUser = "Arya"
+var DataUser = "user"
+var DataPendaftaran = "pendaftaran"
+var DataPembayaran = "pembayaran"
+var DataPengumuman = "pengumuman"
+var DataKursus = "kursus"
 
 type HTTPRequest struct {
 	Header string `json:"header"`
