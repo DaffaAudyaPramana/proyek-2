@@ -53,26 +53,26 @@ func Homepage(c *fiber.Ctx) error {
 	return c.JSON(ipaddr)
 }
 
-func Getuser(c *fiber.Ctx) error {
+func GetUser(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataUser("Arya")
 	return c.JSON(getstatus)
 }
 
-func Getpendaftaran(c *fiber.Ctx) error {
+func GetPendaftaran(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataPendaftaran("Arya")
 	return c.JSON(getstatus)
 }
 
-func Getpembayaran(c *fiber.Ctx) error {
+func GetPembayaran(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataPembayaran("Dibayar?")
 	return c.JSON(getstatus)
 }
 
-func Getpengumuman(c *fiber.Ctx) error {
+func GetPengumuman(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataPengumuman("Fighting")
 	return c.JSON(getstatus)
 }
-func Getkursus(c *fiber.Ctx) error {
+func GetKursus(c *fiber.Ctx) error {
 	getstatus := pkbackend.GetDataKursus("Jon Snow")
 	return c.JSON(getstatus)
 }
