@@ -64,7 +64,7 @@ func GetPendaftaran(c *fiber.Ctx) error {
 }
 
 func GetPembayaran(c *fiber.Ctx) error {
-	getstatus := pkbackend.GetDataPembayaran("Dibayar?")
+	getstatus := pkbackend.GetDataPembayaran("Dibayar")
 	return c.JSON(getstatus)
 }
 
