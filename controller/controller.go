@@ -59,7 +59,7 @@ func GetUser(c *fiber.Ctx) error {
 }
 
 func GetPendaftaran(c *fiber.Ctx) error {
-	getstatus := pkbackend.GetDataPendaftaran("Arya")
+	getstatus := pkbackend.GetDataPendaftaran("92348927348")
 	return c.JSON(getstatus)
 }
 
