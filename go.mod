@@ -5,17 +5,17 @@ go 1.20
 require (
 	aidanwoods.dev/go-paseto v1.3.0 // indirect
 	filippo.io/edwards25519 v1.0.0 // indirect
-	github.com/DaffaAudyaPramana/pkbackend v0.0.6 // indirect
+	github.com/DaffaAudyaPramana/pkbackend v0.0.6
 	github.com/aiteung/atapi v0.0.13 // indirect
-	github.com/aiteung/atdb v0.0.11 // indirect
+	github.com/aiteung/atdb v0.0.11
 	github.com/aiteung/atmessage v0.0.19 // indirect
 	github.com/aiteung/atmodel v0.0.4 // indirect
-	github.com/aiteung/musik v0.0.5 // indirect
+	github.com/aiteung/musik v0.0.5
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/fasthttp/websocket v1.5.3 // indirect
 	github.com/go-sql-driver/mysql v1.7.1 // indirect
-	github.com/gofiber/fiber/v2 v2.47.0 // indirect
-	github.com/gofiber/websocket/v2 v2.2.1 // indirect
+	github.com/gofiber/fiber/v2 v2.47.0
+	github.com/gofiber/websocket/v2 v2.2.1
 	github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9 // indirect
 	github.com/golang-sql/sqlexp v0.1.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
@@ -39,7 +39,7 @@ require (
 	github.com/valyala/fasthttp v1.47.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/whatsauth/watoken v0.1.2 // indirect
-	github.com/whatsauth/whatsauth v0.2.5 // indirect
+	github.com/whatsauth/whatsauth v0.2.5
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
