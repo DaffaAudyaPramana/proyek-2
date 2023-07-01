@@ -3,14 +3,14 @@ package main
 import (
 	"log"
 
-	"github.com/DaffaAudyaPramana/proyek-2/config"
+	"github.com/DaffaAudyaPramana/proyeks-2/config"
 
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 
 	"github.com/whatsauth/whatsauth"
 
-	"github.com/DaffaAudyaPramana/proyek-2/url"
+	"github.com/DaffaAudyaPramana/proyeks-2/url"
 
 	"github.com/gofiber/fiber/v2"
 )

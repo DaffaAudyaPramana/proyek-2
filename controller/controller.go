@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/DaffaAudyaPramana/pkbackend"
-	"github.com/DaffaAudyaPramana/proyek-2/config"
+	"github.com/DaffaAudyaPramana/proyeks-2/config"
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
